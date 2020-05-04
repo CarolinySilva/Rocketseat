@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Aprendendo JavaScript</title>
+</head>
+
+<body>
+    <button id="new">Novo quadrado</button>
+    <div id="quadrados"></div>
+
+    <script>
+        var btnElement = document.getElementById("new");
+        var quadradoElement = document.getElementById("quadrados");
+
+        btnElement.onclick = function() {
+            var quadrado = document.createElement('div');
+
+            quadrado.style.width = '100px';
+            quadrado.style.height = '100px';
+            quadrado.style.backgroundColor = '#F00';
+
+            quadradoElement.appendChild(quadrado);
+        }
+    </script>
+</body>
+
+</html>
